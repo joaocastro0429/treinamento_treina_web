@@ -1,9 +1,9 @@
 
-
+from django.contrib import admin
 from django.urls import path
-from .import views
+from .views import horario_atual, form_cliente
 
 urlpatterns = [
-   
-    path('',views.horario_atual, name='horario_atual')
+    path('horario_atual', horario_atual),
+    path('form_cliente', form_cliente),
 ]
